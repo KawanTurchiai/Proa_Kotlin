@@ -23,11 +23,11 @@ fun opcoes() {
     var opcao = readln().toInt()
     when {
         opcao == 1 -> { sal() }
-        opcao == 2 -> { saq() }
-        opcao == 3 -> { dep() }
-        opcao == 4 -> {}
-        opcao == 5 -> {}
-        opcao == 6 -> {}
+        opcao == 2 -> { ext() }
+        opcao == 3 -> { saq() }
+        opcao == 4 -> { dep()}
+        opcao == 5 -> { trans()}
+        opcao == 6 -> { exit()}
     }
 }
 
@@ -36,7 +36,9 @@ fun sal() {
     opcoes()
 }
 
-
+fun ext() {
+    println("Quanto deseja sacar?")
+}
 fun saq() {
 
     println("Quanto deseja sacar?")
@@ -56,5 +58,5 @@ fun dep() {
 }
 
 fun exit() {
-    println("O seu saldo é de R$$saldo")
+    println("$Nome, foi um prazer ter você por aqui!")
 }
