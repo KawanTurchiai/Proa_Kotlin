@@ -18,16 +18,16 @@ fun login(nome: String) {
 
 fun opcoes() {
     println(
-        "Selecione uma opção\n1. Saldo \n2. Saque \n3. Deposito\n4. Transferir\n5. Sair"
+        "Selecione uma opção\n1. Saldo \n2.Extrato \n3. Saque \n4. Deposito\n5. Transferir\n6. Sair"
     )
     var opcao = readln().toInt()
     when {
         opcao == 1 -> { sal() }
-
         opcao == 2 -> { saq() }
-        opcao == 3 -> {}
+        opcao == 3 -> { dep() }
         opcao == 4 -> {}
         opcao == 5 -> {}
+        opcao == 6 -> {}
     }
 }
 
@@ -35,6 +35,7 @@ fun sal() {
     println("O seu saldo é de R$$saldo")
     opcoes()
 }
+
 
 fun saq() {
 
